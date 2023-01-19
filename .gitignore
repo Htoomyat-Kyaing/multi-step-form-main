@@ -17,3 +17,4 @@
 *.md
 /assets/fonts
 /design
+node_modules

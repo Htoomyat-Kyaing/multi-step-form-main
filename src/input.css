@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-marine-blue: 213deg 96% 18%;
+    --color-purplish-blue: 243deg 100% 62%;
+    --color-pastel-blue: 228deg 100% 84%;
+    --color-light-blue: 206deg 94% 87%;
+    --color-strawberry-red: 354deg 84% 57%;
+  }
+  html {
+    font-family: Ubuntu, system-ui, sans-serif;
+  }
+}
+@layer components {
+  header {
+    background-image: url("/assets/images/bg-sidebar-mobile.svg");
+    background-size: cover;
+  }
+}
