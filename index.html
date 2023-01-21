@@ -12,95 +12,106 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body class="grid min-w-full grid-cols-1 mx-auto grid-rows-layout">
+<body class="grid w-screen h-screen grid-cols-1 grid-rows-layout">
   <!-- Sidebar start -->
   <header>
-    <nav class="w-3/5 h-full pt-8 mx-auto">
-      <ul class="flex justify-center gap-3.5 text-slate-50">
-        <li>
-          <a href="">
-            <div
-              class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
-              <span class="absolute translate-x-[11px] translate-y-1">
-                1
-              </span>
+    <img class="object-cover w-full h-full" src="/assets/images/bg-sidebar-mobile.svg" alt="">
+    <div class="absolute w-full top-10">
+      <nav class="relative -translate-x-1/2 left-1/2">
+        <ul class="flex justify-center gap-3.5 text-slate-50">
+          <li>
+            <a href="">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  1
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 1
+              Your info
             </div>
-          </a>
-          <div class="hidden">
-            Step 1
-            Your info
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <div
-              class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
-              <span class="absolute translate-x-[11px] translate-y-1">
-                2
-              </span>
+          </li>
+          <li>
+            <a href="">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  2
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 2
+              Select plan
             </div>
-          </a>
-          <div class="hidden">
-            Step 2
-            Select plan
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <div
-              class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
-              <span class="absolute translate-x-[11px] translate-y-1">
-                3
-              </span>
+          </li>
+          <li>
+            <a href="">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  3
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 3
+              Add-ons
             </div>
-          </a>
-          <div class="hidden">
-            Step 3
-            Add-ons
-          </div>
-        </li>
-        <li>
-          <a href="">
-            <div
-              class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
-              <span class="absolute translate-x-[11px] translate-y-1">
-                4
-              </span>
+          </li>
+          <li>
+            <a href="">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  4
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 4
+              Summary
             </div>
-          </a>
-          <div class="hidden">
-            Step 4
-            Summary
-          </div>
-        </li>
-      </ul>
-    </nav>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
   </header>
   <!-- Sidebar end -->
 
-  <main>
+  <main class="bg-light_blue bg-opacity-40">
     <!-- Step 1 start -->
-    <div>
-      <section>
-        <h1>
-          Personal info
-        </h1>
-        <p>Please provide your name, email address, and phone number.</p>
-      </section>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="" placeholder="e.g. Stephen King">
-        <label for="email">Email Address</label>
-        <input type="text" name="email" id="" placeholder="e.g. stephenking@lorem.com">
-        <label for="phone">Phone Number</label>
-        <input type="text" name="phone" id="" placeholder="e.g. +1 234 567 890">
-      </form>
-      <button>Next Step</button>
+    <div class="relative">
+      <div class="absolute w-11/12 px-6 py-8 mx-auto -translate-x-1/2 bg-white border rounded-2xl left-1/2 -top-[70px]">
+        <section class="w-9/12">
+          <h1 class="text-2xl font-bold text-marine_blue">
+            Personal info
+          </h1>
+          <p class="my-2 text-base text-slate-400">Please provide your name, email address, and phone number.</p>
+        </section>
+        <form class="flex flex-col gap-1">
+          <label class="mt-2 text-base font-medium text-marine_blue" for="name">Name</label>
+          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="name" id=""
+            placeholder="e.g. Stephen King">
+          <label class="mt-2 text-base font-medium text-marine_blue" for="email">Email Address</label>
+          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="email" id=""
+            placeholder="e.g. stephenking@lorem.com">
+          <label class="mt-2 text-base font-medium text-marine_blue" for="phone">Phone Number</label>
+          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="phone" id=""
+            placeholder="e.g. +1 234 567 890">
+        </form>
+      </div>
+      <div class="absolute top-[350px]">
+        <button>Next Step</button>
+      </div>
     </div>
     <!-- Step 1 end -->
 
     <!-- Step 2 start -->
-    <div>
+    <div class="hidden">
       <section>
         <h1>Select your plan</h1>
         <p>You have the option of monthly or yearly billing.</p>
@@ -135,7 +146,7 @@
     <!-- Step 2 end -->
 
     <!-- Step 3 start -->
-    <div>
+    <div class="hidden">
       <section>
         <h1>Pick add-ons</h1>
         <p>Add-ons help enhance your gaming experience.</p>
@@ -166,25 +177,25 @@
     <!-- Step 3 end -->
 
     <!-- Step 4 start -->
-    <div>
+    <div class="hidden">
       <section>
         <h1>Finishing up</h1>
         <p>Double-check everything looks OK before confirming.
         </p>
       </section>
-    </div>
-    <!-- Dynamically add subscription and add-on selections here -->
-    <article>
-      <h2>Total (per month/year)</h2>
-    </article>
-    <div>
-      <button>Go Back</button>
-      <button>Next Step</button>
+      <!-- Dynamically add subscription and add-on selections here -->
+      <article>
+        <h2>Total (per month/year)</h2>
+      </article>
+      <div>
+        <button>Go Back</button>
+        <button>Next Step</button>
+      </div>
     </div>
     <!-- Step 4 end -->
 
     <!-- Step 5 start -->
-    <div>
+    <div class="hidden">
       <img src="/assets/images/icon-checkmark.svg" alt="checkmark">
       <section>
         <h1>Thank you!</h1>

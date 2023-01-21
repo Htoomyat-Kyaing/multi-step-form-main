@@ -14,9 +14,9 @@
     font-family: Ubuntu, system-ui, sans-serif;
   }
 }
-@layer components {
+/* @layer components {
   header {
-    background-image: url("/assets/images/bg-sidebar-mobile.svg");
+    background-image: url();
     background-size: cover;
   }
-}
+} */

@@ -11,7 +11,7 @@ module.exports = {
         strawberry_red: "hsl(var(--color-strawberry-red) / <alpha-value>)",
       },
       gridTemplateRows: {
-        layout: "172px auto 100px",
+        layout: "172px auto 50px",
       },
     },
   },
