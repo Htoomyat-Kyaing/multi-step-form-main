@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body class="grid w-screen h-screen grid-cols-1 grid-rows-layout">
+<body class="grid w-full h-full grid-cols-1 grid-rows-layout">
   <!-- Sidebar start -->
   <header>
     <img class="object-cover w-full h-full" src="/assets/images/bg-sidebar-mobile.svg" alt="">
@@ -82,30 +82,32 @@
   </header>
   <!-- Sidebar end -->
 
-  <main class="bg-light_blue bg-opacity-40">
+  <main class="bg-light_blue bg-opacity-40 ">
     <!-- Step 1 start -->
-    <div class="relative">
-      <div class="absolute w-11/12 px-6 py-8 mx-auto -translate-x-1/2 bg-white border rounded-2xl left-1/2 -top-[70px]">
-        <section class="w-9/12">
+    <div class="flex flex-col justify-between gap-12 ">
+      <div class="relative bg-white border rounded-2xl -top-[73px] w-11/12 p-6 mx-auto">
+        <section class="w-3/4">
           <h1 class="text-2xl font-bold text-marine_blue">
             Personal info
           </h1>
           <p class="my-2 text-base text-slate-400">Please provide your name, email address, and phone number.</p>
         </section>
-        <form class="flex flex-col gap-1">
+        <form action="/test" method="get" id="personal-info" class="flex flex-col gap-1">
           <label class="mt-2 text-base font-medium text-marine_blue" for="name">Name</label>
           <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="name" id=""
-            placeholder="e.g. Stephen King">
+            placeholder="e.g. Stephen King" required>
           <label class="mt-2 text-base font-medium text-marine_blue" for="email">Email Address</label>
           <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="email" id=""
-            placeholder="e.g. stephenking@lorem.com">
+            placeholder="e.g. stephenking@lorem.com" required>
           <label class="mt-2 text-base font-medium text-marine_blue" for="phone">Phone Number</label>
           <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="phone" id=""
-            placeholder="e.g. +1 234 567 890">
+            placeholder="e.g. +1 234 567 890" required>
         </form>
       </div>
-      <div class="absolute top-[350px]">
-        <button>Next Step</button>
+      <div class="flex items-center justify-end bg-white">
+        <button type="submit" form="personal-info" value="Submit"
+          class="p-3 my-4 mr-4 text-sm text-white rounded hover:cursor-pointer bg-marine_blue">Next
+          Step</button>
       </div>
     </div>
     <!-- Step 1 end -->
@@ -209,9 +211,11 @@
     <!-- Step 5 end -->
   </main>
 
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/Htoomyat-Kyaing" target="_blank">Htoo Myat Kyaing</a>.
+  <footer class="py-2 text-xs text-center">
+    Challenge by <a class="text-blue-600 visited:text-purple-600" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a class="text-blue-600 visited:text-purple-600"
+      href="https://www.frontendmentor.io/profile/Htoomyat-Kyaing" target="_blank">Htoo Myat Kyaing</a>.
   </footer>
 </body>
 
