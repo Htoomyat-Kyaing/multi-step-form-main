@@ -22,7 +22,7 @@
           <li>
             <a href="">
               <div
-                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 bg-light_blue text-marine_blue border-purplish_blue hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
                   1
                 </span>
@@ -50,7 +50,7 @@
           <li>
             <a href="">
               <div
-                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer active w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
                   3
                 </span>
@@ -92,21 +92,33 @@
           </h1>
           <p class="my-2 text-base text-slate-400">Please provide your name, email address, and phone number.</p>
         </section>
-        <form action="/test" method="get" id="personal-info" class="flex flex-col gap-1">
-          <label class="mt-2 text-base font-medium text-marine_blue" for="name">Name</label>
-          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="name" id=""
+        <form action="http://127.0.0.1:5500/index.html" method="get" id="personal-info" class="flex flex-col gap-1">
+          <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="name">Name
+            <span id="warn-name" class="hidden text-xs text-red-600">
+              This field is required
+            </span>
+          </label>
+          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="name" id="name"
             placeholder="e.g. Stephen King" required>
-          <label class="mt-2 text-base font-medium text-marine_blue" for="email">Email Address</label>
-          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="email" id=""
+          <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="email">Email Address
+            <span id="warn-email" class="hidden text-xs text-red-600">
+              This field is required
+            </span>
+          </label>
+          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="email" id="email"
             placeholder="e.g. stephenking@lorem.com" required>
-          <label class="mt-2 text-base font-medium text-marine_blue" for="phone">Phone Number</label>
-          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="phone" id=""
+          <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="phone">Phone Number
+            <span id="warn-phone" class="hidden text-xs text-red-600">
+              This field is required
+            </span>
+          </label>
+          <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="phone" id="phone"
             placeholder="e.g. +1 234 567 890" required>
         </form>
       </div>
       <div class="flex items-center justify-end bg-white">
-        <button type="submit" form="personal-info" value="Submit"
-          class="p-3 my-4 mr-4 text-sm text-white rounded hover:cursor-pointer bg-marine_blue">Next
+        <button id="next-step" type="submit" form="personal-info" value="Submit"
+          class="p-3 my-4 mr-4 text-sm text-white rounded-lg hover:cursor-pointer bg-marine_blue">Next
           Step</button>
       </div>
     </div>
@@ -217,6 +229,10 @@
     Coded by <a class="text-blue-600 visited:text-purple-600"
       href="https://www.frontendmentor.io/profile/Htoomyat-Kyaing" target="_blank">Htoo Myat Kyaing</a>.
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
