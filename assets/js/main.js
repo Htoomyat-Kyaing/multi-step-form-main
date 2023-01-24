@@ -3,10 +3,9 @@ const inputName = document.querySelector("#name");
 const inputEmail = document.querySelector("#email");
 const inputPhone = document.querySelector("#phone");
 
-btnNextStep.on("click", (event) => {
+btnNextStep.on("click", () => {
   console.log("next step");
   console.log(location.href);
-  // event.preventDefault();
 });
 inputName.addEventListener("blur", () => {
   console.log("blur");

@@ -20,7 +20,7 @@
       <nav class="relative -translate-x-1/2 left-1/2">
         <ul class="flex justify-center gap-3.5 text-slate-50">
           <li>
-            <a href="">
+            <a href="/index.html">
               <div
                 class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 bg-light_blue text-marine_blue border-purplish_blue hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
@@ -34,7 +34,7 @@
             </div>
           </li>
           <li>
-            <a href="">
+            <a href="/plan.html">
               <div
                 class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
@@ -78,12 +78,10 @@
         </ul>
       </nav>
     </div>
-
   </header>
   <!-- Sidebar end -->
 
   <main class="bg-light_blue bg-opacity-40 ">
-    <!-- Step 1 start -->
     <div class="flex flex-col justify-between gap-12 ">
       <div class="relative bg-white border rounded-2xl -top-[73px] w-11/12 p-6 mx-auto">
         <section class="w-3/4">
@@ -92,7 +90,7 @@
           </h1>
           <p class="my-2 text-base text-slate-400">Please provide your name, email address, and phone number.</p>
         </section>
-        <form action="http://127.0.0.1:5500/index.html" method="get" id="personal-info" class="flex flex-col gap-1">
+        <form action="/plan.html" method="get" id="personal-info" class="flex flex-col gap-1">
           <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="name">Name
             <span id="warn-name" class="hidden text-xs text-red-600">
               This field is required
@@ -122,105 +120,6 @@
           Step</button>
       </div>
     </div>
-    <!-- Step 1 end -->
-
-    <!-- Step 2 start -->
-    <div class="hidden">
-      <section>
-        <h1>Select your plan</h1>
-        <p>You have the option of monthly or yearly billing.</p>
-      </section>
-      <div>
-        <article>
-          <img src="/assets/images/icon-arcade.svg" alt="Arcade">
-          <h2>Arcade</h2>
-          <p>$9/mo</p>
-        </article>
-        <article>
-          <img src="/assets/images/icon-advanced.svg" alt="Advanced">
-          <h2>Advanced</h2>
-          <p>$12/mo</p>
-        </article>
-        <article>
-          <img src="/assets/images/icon-pro.svg" alt="Pro">
-          <h2>Pro</h2>
-          <p>$15/mo</p>
-        </article>
-        <div>
-          <p>Monthly</p>
-          <input type="checkbox" name="duration" id="">
-          <p>Yearly</p>
-        </div>
-      </div>
-      <div>
-        <button>Go Back</button>
-        <button>Next Step</button>
-      </div>
-    </div>
-    <!-- Step 2 end -->
-
-    <!-- Step 3 start -->
-    <div class="hidden">
-      <section>
-        <h1>Pick add-ons</h1>
-        <p>Add-ons help enhance your gaming experience.</p>
-      </section>
-      <article>
-        <input type="checkbox" name="service" id="">
-        <h2>Online service</h2>
-        <p>Access to multiplayer games</p>
-        +$1/mo
-      </article>
-      <article>
-        <input type="checkbox" name="storage" id="">
-        <h2>Larger storage</h2>
-        <p>Extra 1TB of cloud save</p>
-        +$2/mo
-      </article>
-      <article>
-        <input type="checkbox" name="profile" id="">
-        <h2>Customizable Profile</h2>
-        <p>Custom theme on your profile</p>
-        +$2/mo
-      </article>
-      <div>
-        <button>Go Back</button>
-        <button>Next Step</button>
-      </div>
-    </div>
-    <!-- Step 3 end -->
-
-    <!-- Step 4 start -->
-    <div class="hidden">
-      <section>
-        <h1>Finishing up</h1>
-        <p>Double-check everything looks OK before confirming.
-        </p>
-      </section>
-      <!-- Dynamically add subscription and add-on selections here -->
-      <article>
-        <h2>Total (per month/year)</h2>
-      </article>
-      <div>
-        <button>Go Back</button>
-        <button>Next Step</button>
-      </div>
-    </div>
-    <!-- Step 4 end -->
-
-    <!-- Step 5 start -->
-    <div class="hidden">
-      <img src="/assets/images/icon-checkmark.svg" alt="checkmark">
-      <section>
-        <h1>Thank you!</h1>
-        <p>
-          Thanks for confirming your subscription! We hope you have fun
-          using our platform. If you ever need support, please feel free
-          to email us at support@loremgaming.com.
-        </p>
-      </section>
-    </div>
-    <!-- Step 5 end -->
   </main>
 
   <footer class="py-2 text-xs text-center">
