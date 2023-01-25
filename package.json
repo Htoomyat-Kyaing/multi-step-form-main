@@ -4,5 +4,8 @@
   },
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css -w"
+  },
+  "dependencies": {
+    "daisyui": "^2.47.1"
   }
 }

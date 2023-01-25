@@ -2,8 +2,7 @@ const choices = $("#arcade, #advanced, #pro");
 const arcade = $("#arcade");
 const advanced = $("#advanced");
 const pro = $("#pro");
-const subType = $("#sub-type");
-console.log(subType.value);
+const subType = document.querySelector("#sub-type");
 
 arcade.on("click", () => {
   choices.css({
@@ -40,4 +39,9 @@ pro.on("click", () => {
     "border-width": "2px",
     "background-color": "hsl(206, 94%, 87%,0.3)",
   });
+});
+subType.addEventListener("click", () => {
+  console.log(subType.checked);
+  $("#yearly").toggleClass("text-lg font-semibold text-marine_blue");
+  $("#monthly").toggleClass("text-lg font-semibold text-marine_blue");
 });
