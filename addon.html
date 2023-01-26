@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="grid w-full h-full grid-cols-1 grid-rows-layout">
+  <!-- Sidebar start -->
+  <header>
+    <img class="object-cover w-full h-full" src="/assets/images/bg-sidebar-mobile.svg" alt="">
+    <div class="absolute w-full top-10">
+      <nav class="relative -translate-x-1/2 left-1/2">
+        <ul class="flex justify-center gap-3.5 text-slate-50">
+          <li>
+            <a href="/index.html">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  1
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 1
+              Your info
+            </div>
+          </li>
+          <li>
+            <a href="/plan.html">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  2
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 2
+              Select plan
+            </div>
+          </li>
+          <li>
+            <a href="/addon.html">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer bg-light_blue text-marine_blue border-purplish_blue active w-9 h-9 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  3
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 3
+              Add-ons
+            </div>
+          </li>
+          <li>
+            <a href="/summary.html">
+              <div
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                <span class="absolute translate-x-[11px] translate-y-1">
+                  4
+                </span>
+              </div>
+            </a>
+            <div class="hidden">
+              Step 4
+              Summary
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Sidebar end -->
+
+  <main class="bg-light_blue bg-opacity-40">
+    <div class="flex flex-col justify-between gap-12">
+      <div class="relative bg-white border rounded-2xl -top-[73px] w-11/12 p-6 mx-auto">
+        <section class="w-5/6">
+          <h1 class="text-2xl font-bold text-marine_blue">
+            Pick add-ons
+          </h1>
+          <p class="my-2 text-base text-slate-400">
+            Add-ons help enhance your gaming experience.
+          </p>
+        </section>
+        <div>
+          <article id="service"
+            class="flex items-center justify-between gap-4 p-4 mt-3 border rounded-xl border-slate-400">
+            <div class="flex gap-6">
+              <input type="checkbox" name="service" id="">
+              <div>
+                <h2 class="text-lg font-semibold text-marine_blue">Online service</h2>
+                <p class="text-xs month-price">Access to multiplayer games</p>
+              </div>
+            </div>
+            <p>+$1/mo</p>
+          </article>
+          <article id="storage"
+            class="flex items-center justify-between gap-4 p-4 mt-3 border rounded-xl border-slate-400">
+            <div class="flex gap-6">
+              <input type="checkbox" name="storage" id="">
+              <div>
+                <h2 class="text-lg font-semibold text-marine_blue">Larger storage</h2>
+                <p class="text-xs month-price">Extra 1TB of cloud save</p>
+              </div>
+            </div>
+            <p>+$2/mo</p>
+          </article>
+          <article id="profile"
+            class="flex items-center justify-between gap-4 p-4 mt-3 border rounded-xl border-slate-400">
+            <div class="flex gap-6">
+              <input type="checkbox" name="profile" id="">
+              <div>
+                <h2 class="text-lg font-semibold text-marine_blue">Customizable Profile</h2>
+                <p class="text-xs month-price">Custom theme on your profile</p>
+              </div>
+            </div>
+            <p>+$2/mo</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-between px-4 bg-white">
+      <button id="prev-step" type="submit" form="personal-info" value="Submit"
+        class="p-3 my-4 text-sm rounded-lg text-slate-400 hover:cursor-pointer hover:text-marine_blue"
+        onclick="window.location.href='/index.html';">
+        Go Back
+      </button>
+      <button id="next-step"
+        class="p-3 my-4 text-sm text-white rounded-lg hover:cursor-pointer bg-marine_blue hover:opacity-90"
+        onclick="window.location.href='/addon.html';">
+        Next Step
+      </button>
+    </div>
+  </main>
+
+  <!-- Step 3 start -->
+  <div class="hidden">
+    <section>
+      <h1>Pick add-ons</h1>
+      <p>Add-ons help enhance your gaming experience.</p>
+      <article>
+        <input type="checkbox" name="service" id="">
+        <h2>Online service</h2>
+        <p>Access to multiplayer games</p>
+        +$1/mo
+      </article>
+      <article>
+        <input type="checkbox" name="storage" id="">
+        <h2>Larger storage</h2>
+        <p>Extra 1TB of cloud save</p>
+        +$2/mo
+      </article>
+      <article>
+        <input type="checkbox" name="profile" id="">
+        <h2>Customizable Profile</h2>
+        <p>Custom theme on your profile</p>
+        +$2/mo
+      </article>
+    </section>
+
+    <div>
+      <button>Go Back</button>
+      <button>Next Step</button>
+    </div>
+  </div>
+  <!-- Step 3 end -->
+
+  <!-- Step 4 start -->
+  <div class="hidden">
+    <section>
+      <h1>Finishing up</h1>
+      <p>Double-check everything looks OK before confirming.
+      </p>
+    </section>
+    <!-- Dynamically add subscription and add-on selections here -->
+    <article>
+      <h2>Total (per month/year)</h2>
+    </article>
+    <div>
+      <button>Go Back</button>
+      <button>Next Step</button>
+    </div>
+  </div>
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+  <div class="hidden">
+    <img src="/assets/images/icon-checkmark.svg" alt="checkmark">
+    <section>
+      <h1>Thank you!</h1>
+      <p>
+        Thanks for confirming your subscription! We hope you have fun
+        using our platform. If you ever need support, please feel free
+        to email us at support@loremgaming.com.
+      </p>
+    </section>
+  </div>
+  <!-- Step 5 end -->
+
+  <footer class="py-2 text-xs text-center">
+    Challenge by <a class="text-blue-600 visited:text-purple-600" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a class="text-blue-600 visited:text-purple-600"
+      href="https://www.frontendmentor.io/profile/Htoomyat-Kyaing" target="_blank">Htoo Myat Kyaing</a>.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="/assets/js/plan.js"></script>
+</body>
+
+</html>

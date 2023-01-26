@@ -44,4 +44,5 @@ subType.addEventListener("click", () => {
   console.log(subType.checked);
   $("#yearly").toggleClass("text-lg font-semibold text-marine_blue");
   $("#monthly").toggleClass("text-lg font-semibold text-marine_blue");
+  $(".year-price, .month-price").toggleClass("hidden");
 });

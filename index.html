@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <title>Frontend Mentor | Multi-step form</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body class="grid w-full h-full grid-cols-1 grid-rows-layout">
   <!-- Sidebar start -->
   <header>
-    <img class="object-cover w-full h-full" src="/assets/images/bg-sidebar-mobile.svg" alt="">
+    <img class="object-cover w-full h-full" src="/assets/images/bg-sidebar-mobile.svg" alt="" />
     <div class="absolute w-full top-10">
       <nav class="relative -translate-x-1/2 left-1/2">
         <ul class="flex justify-center gap-3.5 text-slate-50">
@@ -28,10 +28,7 @@
                 </span>
               </div>
             </a>
-            <div class="hidden">
-              Step 1
-              Your info
-            </div>
+            <div class="hidden">Step 1 Your info</div>
           </li>
           <li>
             <a href="/plan.html">
@@ -42,13 +39,10 @@
                 </span>
               </div>
             </a>
-            <div class="hidden">
-              Step 2
-              Select plan
-            </div>
+            <div class="hidden">Step 2 Select plan</div>
           </li>
           <li>
-            <a href="">
+            <a href="/addon.html">
               <div
                 class="relative font-semibold border-2 border-solid rounded-full cursor-pointer active w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
@@ -56,13 +50,10 @@
                 </span>
               </div>
             </a>
-            <div class="hidden">
-              Step 3
-              Add-ons
-            </div>
+            <div class="hidden">Step 3 Add-ons</div>
           </li>
           <li>
-            <a href="">
+            <a href="/summary.html">
               <div
                 class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
@@ -70,10 +61,7 @@
                 </span>
               </div>
             </a>
-            <div class="hidden">
-              Step 4
-              Summary
-            </div>
+            <div class="hidden">Step 4 Summary</div>
           </li>
         </ul>
       </nav>
@@ -81,14 +69,14 @@
   </header>
   <!-- Sidebar end -->
 
-  <main class="bg-light_blue bg-opacity-40 ">
-    <div class="flex flex-col justify-between gap-12 ">
+  <main class="bg-light_blue bg-opacity-40">
+    <div class="flex flex-col justify-between gap-12">
       <div class="relative bg-white border rounded-2xl -top-[73px] w-11/12 p-6 mx-auto">
         <section class="w-3/4">
-          <h1 class="text-2xl font-bold text-marine_blue">
-            Personal info
-          </h1>
-          <p class="my-2 text-base text-slate-400">Please provide your name, email address, and phone number.</p>
+          <h1 class="text-2xl font-bold text-marine_blue">Personal info</h1>
+          <p class="my-2 text-base text-slate-400">
+            Please provide your name, email address, and phone number.
+          </p>
         </section>
         <form action="/plan.html" method="get" id="personal-info" class="flex flex-col gap-1">
           <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="name">Name
@@ -97,36 +85,38 @@
             </span>
           </label>
           <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="name" id="name"
-            placeholder="e.g. Stephen King" required>
+            placeholder="e.g. Stephen King" required />
           <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="email">Email Address
             <span id="warn-email" class="hidden text-xs text-red-600">
               This field is required
             </span>
           </label>
           <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="email" id="email"
-            placeholder="e.g. stephenking@lorem.com" required>
+            placeholder="e.g. stephenking@lorem.com" required />
           <label class="flex justify-between mt-2 text-base font-medium text-marine_blue" for="phone">Phone Number
             <span id="warn-phone" class="hidden text-xs text-red-600">
               This field is required
             </span>
           </label>
           <input class="px-4 py-2 font-medium border rounded border-slate-400" type="text" name="phone" id="phone"
-            placeholder="e.g. +1 234 567 890" required>
+            placeholder="e.g. +1 234 567 890" required />
         </form>
       </div>
       <div class="flex items-center justify-end bg-white">
         <button id="next-step" type="submit" form="personal-info" value="Submit"
-          class="p-3 my-4 mr-4 text-sm text-white rounded-lg hover:cursor-pointer bg-marine_blue">Next
-          Step</button>
+          class="p-3 my-4 mr-4 text-sm text-white rounded-lg hover:cursor-pointer bg-marine_blue">
+          Next Step
+        </button>
       </div>
     </div>
   </main>
 
   <footer class="py-2 text-xs text-center">
-    Challenge by <a class="text-blue-600 visited:text-purple-600" href="https://www.frontendmentor.io?ref=challenge"
-      target="_blank">Frontend Mentor</a>.
-    Coded by <a class="text-blue-600 visited:text-purple-600"
-      href="https://www.frontendmentor.io/profile/Htoomyat-Kyaing" target="_blank">Htoo Myat Kyaing</a>.
+    Challenge by
+    <a class="text-blue-600 visited:text-purple-600" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a>. Coded by
+    <a class="text-blue-600 visited:text-purple-600" href="https://www.frontendmentor.io/profile/Htoomyat-Kyaing"
+      target="_blank">Htoo Myat Kyaing</a>.
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
