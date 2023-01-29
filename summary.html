@@ -50,7 +50,7 @@
           <li>
             <a href="/addon.html">
               <div
-                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer bg-light_blue text-marine_blue border-purplish_blue active w-9 h-9 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer active w-9 h-9 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
                   3
                 </span>
@@ -64,7 +64,7 @@
           <li>
             <a href="/summary.html">
               <div
-                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer w-9 h-9 border-slate-100 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
+                class="relative font-semibold border-2 border-solid rounded-full cursor-pointer bg-light_blue text-marine_blue border-purplish_blue w-9 h-9 hover:bg-pastel_blue hover:border-purplish_blue hover:text-marine_blue">
                 <span class="absolute translate-x-[11px] translate-y-1">
                   4
                 </span>
@@ -86,10 +86,10 @@
       <div class="relative bg-white border rounded-2xl -top-[73px] w-11/12 p-6 mx-auto">
         <section class="w-5/6">
           <h1 class="text-2xl font-bold text-marine_blue">
-            Pick add-ons
+            Finishing up
           </h1>
           <p class="my-2 text-base text-slate-400">
-            Add-ons help enhance your gaming experience.
+            Double-check everything looks OK before confirming.
           </p>
         </section>
         <div>
@@ -132,16 +132,48 @@
     <div class="flex items-center justify-between px-4 bg-white">
       <button id="prev-step" type="submit" form="personal-info" value="Submit"
         class="p-3 my-4 text-sm rounded-lg text-slate-400 hover:cursor-pointer hover:text-marine_blue"
-        onclick="window.location.href='/plan.html';">
+        onclick="window.location.href='/addon.html';">
         Go Back
       </button>
       <button id="next-step"
-        class="p-3 my-4 text-sm text-white rounded-lg hover:cursor-pointer bg-marine_blue hover:opacity-90"
-        onclick="window.location.href='/summary.html';">
-        Next Step
+        class="p-3 my-4 text-sm text-white rounded-lg hover:cursor-pointer bg-purplish_blue hover:opacity-90"
+        onclick="window.location.href='/confirm.html';">
+        Confirm
       </button>
     </div>
   </main>
+
+  <!-- Step 4 start -->
+  <div class="hidden">
+    <section>
+      <h1>Finishing up</h1>
+      <p>Double-check everything looks OK before confirming.
+      </p>
+    </section>
+    <!-- Dynamically add subscription and add-on selections here -->
+    <article>
+      <h2>Total (per month/year)</h2>
+    </article>
+    <div>
+      <button>Go Back</button>
+      <button>Next Step</button>
+    </div>
+  </div>
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+  <div class="hidden">
+    <img src="/assets/images/icon-checkmark.svg" alt="checkmark">
+    <section>
+      <h1>Thank you!</h1>
+      <p>
+        Thanks for confirming your subscription! We hope you have fun
+        using our platform. If you ever need support, please feel free
+        to email us at support@loremgaming.com.
+      </p>
+    </section>
+  </div>
+  <!-- Step 5 end -->
 
   <footer class="py-2 text-xs text-center">
     Challenge by <a class="text-blue-600 visited:text-purple-600" href="https://www.frontendmentor.io?ref=challenge"
